@@ -50,4 +50,9 @@ The following symbols are supported:
 Note that whitespace is illegal (unless in an EXPRESSION specified in postfix).
 ```
 
+## Examples
+A simple expression featuring all supported operations, evaluated with the verbose output flag:
+
+![alt text](https://github.com/brekekekex/arith/blob/master/img/example.png)
+
 
