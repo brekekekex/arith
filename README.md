@@ -2,7 +2,7 @@
 ## Overview
 Evaluating an algebraic expression is fairly trivial provided it has been serialized. In particular, postfix-notation strings may be evaluated through a judicious (yet simple) use of pushdown stacks. This repository details the implementation of such a stack-based calculator for simple (integer) expressions.
 
-I have personally found [reverse Polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) (RPN), however computationally tractable, to be highly unpleasant to read and write. Therefore, this calculator only relies on RPN as an internal representation&mdash;the user may input a normal, infix expression if they so desire. This is summarily parsed to postfix/RPN via Dijkstra's [shunting yard algorithm](http://www.cs.utexas.edu/~EWD/MCReps/MR35.PDF) prior to evaluation.
+I personally find [reverse Polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) (RPN), however computationally tractable, to be highly unpleasant to read and write. Therefore, this calculator only relies on RPN as an internal representation&mdash;the user may input a normal, infix expression if they so desire. This is summarily parsed to postfix/RPN via Dijkstra's [shunting yard algorithm](http://www.cs.utexas.edu/~EWD/MCReps/MR35.PDF) prior to evaluation.
 
 ## Design
 This project is for self-learning, which entails some constraints as well as some liberties. As concerns the former, I have hand-rolled the relevant data structures and algorithms in C while avoiding its standard library (*libc*) as much as possible.
@@ -50,7 +50,7 @@ The following symbols are supported:
 Note that whitespace is illegal (unless in an EXPRESSION specified in postfix).
 ```
 
-## Examples
+## Gallery
 A simple expression featuring all supported operations, evaluated with the verbose output flag:
 
 ![alt text](https://github.com/brekekekex/arith/blob/master/img/example.png)
